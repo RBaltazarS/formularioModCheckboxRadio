@@ -1,0 +1,121 @@
+/* Google Fonts Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: #3894A3;
+  --second-color: #2F414F;
+  --letter-color: #F1F1EF;
+  --btn-color:  #C7DAD4;
+}
+
+body{
+  background-color: var(--primary-color);
+  color: var(--letter-color);
+  display: grid;
+  height: 100vh;
+}
+
+body *{
+  font-family: 'Unbounded', cursive;
+}
+
+/*ALL FORM*/
+form{
+  background-color: var(--second-color);
+  width: min(30rem, 95%);
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+fieldset legend{
+  font-size: 2rem;
+}
+
+fieldset{
+  border-radius: 0.625rem;
+  border: solid 0.125rem;
+}
+
+h2{
+  font-weight: 100;
+}
+
+.radioOffice > div{
+  display: flex;
+}
+
+.radioOffice input[type="radio"]{
+  appearance: none;
+  border:  1px solid #000;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--btn-color);
+}
+
+.radioOffice input[type="radio"]:checked{
+  background-image: radial-gradient(#FFF 35%, #000 60%);
+}
+
+.tec input[type="checkbox"]{
+  appearance: none;
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.tec input[type="checkbox"]:checked::before{
+  content: "✓" ;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -0.6rem;
+}
+
+.radioOffice label{
+  margin: 0.25rem;
+}
+
+.radioOffice, .checkboxTec{
+  margin: 1rem;
+}
+
+
+
+
+.checkboxTec div{
+  padding: 0.25rem;
+}
+
+
+/*BUTTON*/
+.btn button{
+  margin-top: 0.9375rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 0;
+  background-color: var(--letter-color);
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.10rem;
+  cursor: pointer;
+
+}
+
+button:hover{
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+  transition: all .3s ease-out;
+  
+}
+
